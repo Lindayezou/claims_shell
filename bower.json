@@ -1,0 +1,26 @@
+{
+  "name": "NodeExample",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jeremy Doucet <jeremy.doucet93@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "angular-resource": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "angular-touch": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-bootstrap": "^2.0.0"
+  }
+}

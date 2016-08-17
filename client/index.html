@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>app</title>
+	<base href="/">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/slate/bootstrap.min.css" />
+</head>
+<body>
+	<navbar></navbar>
+	<div ui-view=""></div>
+
+	<!-- external libs -->
+	<script src="/lib/angular/angular.min.js"></script>
+	<script src="/lib/angular-resource/angular-resource.min.js"></script>
+	<script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="/lib/angular-touch/angular-touch.min.js"></script>
+	<script src="/lib/angular-animate/angular-animate.min.js"></script>
+	<script src="/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<!-- modules -->
+	<script src="/client/app/app.js"></script>
+	<script src="/client/app/main/main.module.js"></script>
+	<script src="/client/app/update/update.module.js"></script>
+	<script src="/client/app/auth/auth.module.js"></script>
+
+	<script src="/client/components/navbar/navbar.directive.js"></script>
+	<script src="/client/components/navbar/navbar.controller.js"></script>
+	<!-- Main page -->
+	<script src="/client/app/main/main.controller.js"></script>
+	<script src="/client/app/update/update.controller.js"></script>
+	<script src="/client/components/create-movie-modal/create.movie.modal.controller.js"></script>
+	<script src="/client/app/movie.service.js"></script>
+	<script src="/client/components/authInterceptor/auth.interceptor.js"></script>
+	<script src="/client/app/auth/auth.service.js"></script>
+	<script src="/client/app/auth/login/login.controller.js"></script>
+	<script src="/client/app/auth/register/register.controller.js"></script>
+</body>
+</html>

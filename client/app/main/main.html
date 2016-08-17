@@ -1,0 +1,11 @@
+<h1>HELLO WORLD!</h1>
+<button type="button" class="btn btn-success" ng-click="vm.openCreateModal()" ng-show="vm.status._id">Create a Movie</button>
+
+<div ng-repeat="m in vm.movies">
+  <h3>{{m.title}}</h3>
+  <h4>posted by: {{ m.owner.username }}</h4>
+  <div ng-show="vm.status._id && (m.owner._id === vm.status._id || vm.status.role === 'Admin')">
+    <button type="button" class="btn btn-danger" ng-click="vm.removeMovie(m)">Delete</button>
+    <button type="button" class="btn btn-warning" ui-sref="update({ id: m._id })">Edit</button>
+  </div>
+</div>

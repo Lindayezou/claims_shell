@@ -1,0 +1,15 @@
+<div class="well" style="height: 35px;">
+  <div style="float:left; line-height: 0;">
+    <a ui-sref="main">Home</a>
+  </div>
+  <div style="float:right; line-height: 0;">
+    <div ng-show="!nav.status._id">
+      <a ui-sref="login">Login</a>
+      <span> / </span>
+      <a ui-sref="register">Register</a>
+    </div>
+    <div ng-show="nav.status._id">
+      <a ng-click="nav.logout()">Logout</a>
+    </div>
+  </div>
+</div>
